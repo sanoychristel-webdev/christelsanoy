@@ -76,4 +76,25 @@ window.addEventListener('scroll', () => {
     }
 })
 
-   
+let toggle_hamburger_state = false;
+
+function toggleHamburger(state){
+    const hamburger_btn = document.getElementById('hamburger-btn');
+    const navigation_container = document.getElementById('nav');
+    const hire_btn = document.getElementById('hire-me-link');
+
+    if(state === false){
+        navigation_container.style.display = "flex";
+        hire_btn.style.display = "flex";
+        toggle_hamburger_state = true;
+        hamburger_btn.style.opacity = '60%';
+    }
+    
+    if(state === true){
+        navigation_container.style.display = "none";
+        hire_btn.style.display = "none";
+        toggle_hamburger_state = false;
+        hamburger_btn.style.opacity = '100%';
+    }
+    
+}
