@@ -1,0 +1,131 @@
+:root{
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background-color: rgb(255, 255, 255);
+    background-color: rgb(39, 29, 14);
+    transition: 1s;
+}
+
+.header-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 64px 0;
+
+    
+}
+
+.header-content{
+    width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width:1440px) {
+        width: 90%;
+        align-items: center;
+    }
+}
+
+.back-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(255, 137, 2);
+}
+
+.back-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.back-icon{
+    width: 32px;
+    height: 32px;
+    margin-right: 4px;
+}
+
+.project-name-container{
+    color: rgb(255, 137, 2);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.hero-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: up-fade-in 1s;
+}
+
+.hero-content{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+     text-align: center;
+
+    @media (max-width:1440px) {
+        width: 90%;
+    }
+
+    @media (max-width:480px) {
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+.header-menu-container{
+    padding: 8px 32px;
+    background-color: rgb(255, 216, 171);
+    border-radius: 4px;
+    font-weight: bold;
+
+    @media (max-width:600px) {
+        display: none;
+    }
+}
+
+.header-menu{
+    text-decoration: none;
+    color: rgb(39, 29, 14);
+    margin: 0 8px;
+    transition: .5s;
+}
+
+.header-menu:hover{
+    opacity: 50%;
+    transition: .5s;
+}
+
+#IRMS{
+    color: rgb(255, 137, 2);
+}
+
+#hero-img{
+    @media (max-width:480px) {
+        width: 80%;
+    }
+}
+
+@keyframes up-fade-in {
+    from{
+        opacity: 0%;
+        margin-top: 40px;
+    }
+    to{
+        opacity: 100%;
+        margin-top: 0;
+    }
+}
