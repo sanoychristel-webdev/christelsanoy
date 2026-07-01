@@ -1,0 +1,12 @@
+footer{
+    display: flex;
+    justify-content: center;
+    border-radius: 18px 18px 0 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: var(--color-primary);
+}
+
+.footer-container{
+    
+}

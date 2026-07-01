@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
+
+.manrope-fontstyle {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root{
+    --color-primary: #F4FAFF;
+    --color-secondary: #176BE8;
+    --color-tertiary: #00EEFF;
+    --color-fourth: #001028;
+    --spacing-sm:8px;
+    --spacing-md:16px;
+    scroll-behavior: smooth;
+    scrollbar-color: var(--color-primary);
+    scroll-padding-top: 60px;
+}
+
+body{
+    font-family: "Inter";
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-primary);
+    overflow-x: hidden;
+}
+
+.border-test{
+    border:1px solid pink;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-primary);
+    position: fixed;
+    box-shadow: .1px -4px 8px var(--color-fourth);
+    z-index: 1;
+
+}
+
+.header-content{
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+    @media (max-width:1200px) {
+        width: 90%;
+    }
+}
+
+.logo{
+    font-style: italic;
+    font-weight: 700;
+
+   /* animation: fade-in-left-right 1s ease-in-out;*/
+}
+
+.dev{
+    color: var(--color-secondary);
+}
+
+#nav{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    /*animation: fade 1s ease-in-out;*/
+}
+
+#nav > li > a{
+    text-decoration: none;
+    color: var(--color-fourth);
+    margin: 0 var(--spacing-sm);
+    padding: 6px 12px;
+    border-bottom: 4px solid transparent;
+
+    transition: .5s;
+
+    @media (max-width:680px) {
+        display: none;
+    }
+}
+
+#nav > li > a:hover{
+    color: var(--color-secondary);
+    border-bottom: 4px solid var(--color-secondary);
+
+    transition: .5s;
+}
+
+#hire-me-link{
+    text-decoration: none;
+    color: var(--color-primary);
+    padding: 6px 12px;
+    background-color: var(--color-secondary);
+    border-radius: 4px;
+    /*animation: fade-in-right-left 1s ease-in-out;*/
+    transition: .5s;
+
+    @media (max-width:680px) {
+        display: none;
+    }
+}
+
+#hire-me-link:hover{
+    opacity: 80%;
+
+    transition: .5s;
+}
+
+#hamburger-btn{
+    background-color: transparent;
+    border: none;
+    display: none;
+    padding: 0;
+    transition: .5s;
+
+    @media (max-width:680px) {
+        display: block;
+    }
+}
+
+#hamburger-btn:hover{
+    cursor: pointer;
+    opacity: 80%;
+    transition: .5s;
+
+}
