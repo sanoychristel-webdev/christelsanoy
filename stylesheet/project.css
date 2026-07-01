@@ -27,7 +27,7 @@
     padding: 20px 0;
    
     @media (max-width:1200px) {
-        width: 100%;
+        width: 90%;
     }
     
 }
@@ -36,6 +36,7 @@
     text-align: center;
 }
 .container-title{
+    margin: 0;
     color: var(--color-secondary);
     text-align: center;
 }

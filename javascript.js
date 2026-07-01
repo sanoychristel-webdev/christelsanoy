@@ -63,7 +63,7 @@ window.addEventListener('scroll', () => {
         document.getElementById('projects').style.borderBottom = '4px solid var(--primary-background-color)';
     }
 
-    if (window.scrollY > heroPosition + project + navigationPosition && window.scrollY < aboutMe + heroPosition + project - navigationPosition) {
+    if (window.scrollY > heroPosition + project + navigationPosition && window.scrollY < aboutMe + heroPosition + project - navigationPosition - 200) {
         document.getElementById('about-me').style.borderBottom = '4px solid var(--color-secondary)';
     } else {
         document.getElementById('about-me').style.borderBottom = '4px solid var(--primary-background-color)';
